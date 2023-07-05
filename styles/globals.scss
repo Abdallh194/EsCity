@@ -1,0 +1,21 @@
+@import "bootstrap/dist/css/bootstrap.css"; //bootstrap
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap"); //header font
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap"); // main font
+$header-font: "Roboto";
+$main-font: "Montserrat";
+$gold-color: #ffce3e;
+$gray-color: #f2f2f2;
+.container {
+  max-width: 1180px !important;
+}
+* {
+  font-family: $main-font;
+}
+body {
+  font-family: $main-font;
+}
+a {
+  display: inline-block;
+  text-decoration: none;
+}
+@import "Assest/Home";

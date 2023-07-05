@@ -1,0 +1,114 @@
+.Home {
+  height: 800px;
+  background: url("img/home-bg.jpg");
+  background-size: cover;
+  position: relative;
+  .overlay {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.2);
+  }
+  .content {
+    width: 61%;
+
+    text-align: center;
+    margin: 40px auto;
+    margin-top: 250px;
+    color: white;
+    .sub-head {
+      font-size: 25px;
+    }
+    .main-head {
+      font-family: $header-font;
+      line-height: 1.2;
+      font-size: 65px;
+      font-weight: bold;
+    }
+    .more {
+      background-color: $gold-color;
+      width: 150px;
+      padding: 11px;
+      margin: 15px auto;
+      font-weight: bold;
+      color: white;
+    }
+  }
+  .cards {
+    margin-top: 140px;
+  }
+  .card-view {
+    background-color: $gray-color;
+    color: black;
+    width: 32%;
+    text-align: center;
+    margin: 20px auto;
+    padding: 40px;
+    .bi {
+      color: $gold-color;
+      margin: 10px auto;
+    }
+    .head {
+      font-size: 25px;
+      letter-spacing: -1px;
+      font-family: $header-font;
+      padding: 12px 0;
+    }
+    .desc {
+      font-size: 14px;
+      font-weight: bold;
+    }
+    .more {
+      width: 150px;
+      padding: 8px;
+      background-color: $gold-color;
+      margin: 10px auto;
+      color: black;
+      font-weight: bold;
+      margin-top: 20px;
+    }
+  }
+  @media (max-width: 1110px) {
+    .content .main-head {
+      font-size: 61px;
+    }
+  }
+  @media (max-width: 992px) {
+    background-position-x: 34%;
+    .content .main-head {
+      font-size: 52px;
+    }
+  }
+  @media (max-width: 767px) {
+    .content {
+      width: 100%;
+    }
+    .card-view {
+      width: 95%;
+    }
+  }
+  @media (max-width: 575px) {
+    .card-view {
+      padding: 30px 15px;
+      width: 80%;
+      margin: 7px auto;
+    }
+    .content {
+      margin-top: 175px;
+      .main-head {
+        font-size: 44px;
+        line-height: unset;
+      }
+      .sub-head {
+        font-size: 21px;
+        padding: 15px 0;
+      }
+      .more {
+        width: 170px;
+        font-size: 19px;
+      }
+    }
+  }
+}

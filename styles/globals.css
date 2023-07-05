@@ -1,0 +1,135 @@
+@import "bootstrap/dist/css/bootstrap.css";
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap");
+.container {
+  max-width: 1180px !important;
+}
+
+* {
+  font-family: "Montserrat";
+}
+
+body {
+  font-family: "Montserrat";
+}
+
+a {
+  display: inline-block;
+  text-decoration: none;
+}
+
+.Home {
+  height: 800px;
+  background: url("img/home-bg.jpg");
+  background-size: cover;
+  position: relative;
+}
+.Home .overlay {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.2);
+}
+.Home .content {
+  width: 61%;
+  text-align: center;
+  margin: 40px auto;
+  margin-top: 250px;
+  color: white;
+}
+.Home .content .sub-head {
+  font-size: 25px;
+}
+.Home .content .main-head {
+  font-family: "Roboto";
+  line-height: 1.2;
+  font-size: 65px;
+  font-weight: bold;
+}
+.Home .content .more {
+  background-color: #ffce3e;
+  width: 150px;
+  padding: 11px;
+  margin: 15px auto;
+  font-weight: bold;
+  color: white;
+}
+.Home .cards {
+  margin-top: 140px;
+}
+.Home .card-view {
+  background-color: #f2f2f2;
+  color: black;
+  width: 32%;
+  text-align: center;
+  margin: 20px auto;
+  padding: 40px;
+}
+.Home .card-view .bi {
+  color: #ffce3e;
+  margin: 10px auto;
+}
+.Home .card-view .head {
+  font-size: 25px;
+  letter-spacing: -1px;
+  font-family: "Roboto";
+  padding: 12px 0;
+}
+.Home .card-view .desc {
+  font-size: 14px;
+  font-weight: bold;
+}
+.Home .card-view .more {
+  width: 150px;
+  padding: 8px;
+  background-color: #ffce3e;
+  margin: 10px auto;
+  color: black;
+  font-weight: bold;
+  margin-top: 20px;
+}
+@media (max-width: 1110px) {
+  .Home .content .main-head {
+    font-size: 61px;
+  }
+}
+@media (max-width: 992px) {
+  .Home {
+    background-position-x: 34%;
+  }
+  .Home .content .main-head {
+    font-size: 52px;
+  }
+}
+@media (max-width: 767px) {
+  .Home .content {
+    width: 100%;
+  }
+  .Home .card-view {
+    width: 95%;
+  }
+}
+@media (max-width: 575px) {
+  .Home .card-view {
+    padding: 30px 15px;
+    width: 80%;
+    margin: 7px auto;
+  }
+  .Home .content {
+    margin-top: 175px;
+  }
+  .Home .content .main-head {
+    font-size: 44px;
+    line-height: unset;
+  }
+  .Home .content .sub-head {
+    font-size: 21px;
+    padding: 15px 0;
+  }
+  .Home .content .more {
+    width: 170px;
+    font-size: 19px;
+  }
+}/*# sourceMappingURL=globals.css.map */
